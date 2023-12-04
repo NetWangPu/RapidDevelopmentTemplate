@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.14.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: wang pu, sysbent, LIC=VGXG8-3BF2Y-SB9EJ-USKM1-YCSL9-ZKJG9
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.14.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 1 (build 106)
+Assembler:       Armasm.exe V5.05 update 1 (build 106)
+Linker/Locator:  ArmLink.exe V5.05 update 1 (build 106)
+Library Manager: ArmAr.exe V5.05 update 1 (build 106)
+Hex Converter:   FromElf.exe V5.05 update 1 (build 106)
+CPU DLL:         SARMCM3.DLL V5.14.0.0
+Dialog DLL:      DCM.DLL V1.13.1.0
+Target DLL:      CMSIS_AGDI.dll V1.21.0.0
+Dialog DLL:      TCM.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\32128\Documents\»ğÔÖ±¨¾¯\»ğÔÖ-×ÛºÏ -  ¸ü¸Ä\USER\USART.uvprojx
+Project File Date:  09/16/2023
+
+<h2>Output:</h2>
+Build target 'USART'
+compiling main.c...
+..\HARDWARE\SOIL\soil.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+main.c(34): warning:  #1295-D: Deprecated declaration Fire_Range_Init - give arg types
+  void Fire_Range_Init();
+main.c(35): warning:  #1295-D: Deprecated declaration Smog_Range_Init - give arg types
+  void Smog_Range_Init();
+main.c(38): warning:  #1295-D: Deprecated declaration main_usart1_fun - give arg types
+  void main_usart1_fun();
+main.c(39): warning:  #1295-D: Deprecated declaration main_usart2_fun - give arg types
+  void main_usart2_fun();
+main.c(63): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+        sprintf(str,"Êª¶È:%0.2f%%",Hum);
+main.c(67): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+        sprintf(str,"ÎÂ¶È:%0.2f¡ãC",Temp);
+main.c(75): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+                        sprintf(str,"»ğÑæ:%d ",4096-Get_Adc(0));                
+main.c(78): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+                        sprintf(str,"»ğÑæ:%d ",4096-Get_Adc(0));        
+main.c(88): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+        sprintf(str,"ÑÌÎí:%d", Get_Adc(1));
+main.c(90): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+        str[strlen(str)] = 32;
+main.c(110): warning:  #128-D: loop is not reachable
+        while(1)
+main.c(43): warning:  #177-D: variable "len" was declared but never referenced
+        u16 len;        
+main.c(44): warning:  #177-D: variable "times" was declared but never referenced
+        u16 times=0;
+main.c(120): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+        usart1_send_string(USART1_RX_BUF,strlen(USART1_RX_BUF));
+main.c(120): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+        usart1_send_string(USART1_RX_BUF,strlen(USART1_RX_BUF));
+main.c(124): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+        usart1_send_string(USART2_RX_BUF,strlen(USART2_RX_BUF));
+main.c(124): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *"
+        usart1_send_string(USART2_RX_BUF,strlen(USART2_RX_BUF));
+main.c: 18 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling led.c...
+compiling key.c...
+compiling AHT10.c...
+..\HARDWARE\IIC\AHT10.c(90): warning:  #223-D: function "delay_ms" declared implicitly
+        delay_ms(20);
+..\HARDWARE\IIC\AHT10.c(118): warning:  #223-D: function "delay_ms" declared implicitly
+        delay_ms(20);//ä¸Šç”µå»¶æ—¶
+..\HARDWARE\IIC\AHT10.c(137): warning:  #223-D: function "delay_ms" declared implicitly
+        delay_ms(70);   //å»¶æ—¶70æ¯«ç§’ç­‰å¾…æµ‹é‡å®Œæˆ
+..\HARDWARE\IIC\AHT10.c(165): warning:  #175-D: subscript out of range
+                uint32_t ST = ((Data[3]&0x0f)<<16) | (Data[4]<<8) | Data[5];//æ¸©åº¦æ•°æ®å¤„ç†
+..\HARDWARE\IIC\AHT10.c(176): warning: C4487E: read from variable 'Data' with offset out of bounds
+}
+..\HARDWARE\IIC\AHT10.c: 5 warnings, 0 errors
+compiling OLED.c...
+compiling soil.c...
+..\HARDWARE\SOIL\soil.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\SOIL\soil.c: 1 warning, 0 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart1.c...
+..\SYSTEM\usart1\usart1.c(85): warning:  #177-D: variable "Res" was declared but never referenced
+        u8 Res = 0;
+..\SYSTEM\usart1\usart1.c: 1 warning, 0 errors
+compiling usart2.c...
+..\SYSTEM\usart2\usart2.c(82): warning:  #177-D: variable "Res" was declared but never referenced
+        u8 Res = 0;
+..\SYSTEM\usart2\usart2.c: 1 warning, 0 errors
+compiling core_cm3.c...
+assembling startup_stm32f10x_ld.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_i2c.c...
+linking...
+Program Size: Code=19652 RO-data=3280 RW-data=64 ZI-data=1112  
+FromELF: creating hex file...
+"..\OBJ\USART.axf" - 0 Error(s), 26 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\32128\Documents\»ğÔÖ±¨¾¯\»ğÔÖ-×ÛºÏ -  ¸ü¸Ä\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0
+
+<h2>Collection of Component Files used:</h2>
+</pre>
+</body>
+</html>
