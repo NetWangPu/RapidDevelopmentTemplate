@@ -34,8 +34,5 @@
 ..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\obj\main.o: ..\SYSTEM\usart2\usart2.h
-..\obj\main.o: ..\HARDWARE\IIC\OLED.h
+..\obj\main.o: ..\HARDWARE\OLED\oled.h
 ..\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-..\obj\main.o: ..\HARDWARE\IIC\AHT10.h
-..\obj\main.o: ..\HARDWARE\SOIL\soil.h
-..\obj\main.o: ..\HARDWARE\LED\led.h
