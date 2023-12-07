@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "hardwareiic.h": "c",
+        "softwareiic.h": "c"
+    }
+}
